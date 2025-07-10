@@ -5,6 +5,15 @@
   --main-font-bold: 715;
   --main-font-regular: 410;
   --main-bg-color: #fff;
+
+  --gradient-light-color: #E7E7E7;
+  --gradient-dark-color: #1A1A1A;
+  --text-color: #000;
+  --border-color: #000;
+  --shadow-color: #fff;
+  --animation-fill-color: #FF0000;
+  --contour-color: #FF0000;
+
 }
 
 @supports (font-variation-settings: normal) {

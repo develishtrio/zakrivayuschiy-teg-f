@@ -11,9 +11,195 @@
 */
 
 .page {
+  font-family: var(--main-font-family), sans-serif;
+  background-image: repeating-linear-gradient(
+      to bottom,
+      var(--main-bg-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to right,
+      var(--main-bg-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      180deg,
+      var(--gradient-light-color) 0%,
+      var(--gradient-dark-color) 100%
+    );
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font-family), sans-serif;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: "wght" 400;
 }
 
+.header {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid #000;
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem) 0 12px;
+  color: var(--text-color);
+  font-family: var(--accent-font-family), sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: var(--main-bg-color);
+}
+
+.content {
+  margin: 0 auto;
+  margin-block-start: 100px;
+  max-inline-size: 696px;
+}
+
+.header__title {
+  font-family: var(--accent-font-family), sans-serif;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
+}
+
+.header__subtitle {
+  margin-block-end: 4px;
+  font-family: var(--accent-font-family), sans-serif;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.card {
+  margin-block-end: 50px;
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
+}
+
+.card__title {
+  border: 2px solid var(--border-color);
+  padding: 5px 22px 5px 8px;
+  font-family: var(--main-font-family), sans-serif;
+  font-weight: var(--main-font-bold);
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  font-variation-settings: "wght" var(--main-font-bold);
+}
+
+.card__header {
+  position: relative;
+  border: 2px solid var(--border-color);
+  border-block-start: none;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card__tag {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  color: var(--text-color);
+  font-family: var(--accent-font-family), sans-serif;
+  font-weight: var(--main-font-regular);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-shadow: 0 var(--shadow-color), 0 1px var(--shadow-color),
+  0 -1px var(--shadow-color), 1px 0 var(--shadow-color);
+  mix-blend-mode: hard-light;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.card__content {
+  border: 2px solid var(--border-color);
+  padding: 25px;
+}
+
+.card__text {
+  font-family: var(--main-font-family), sans-serif;
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card__text:nth-child(1) {
+  margin-block-end: 27px;
+}
+
+.card__text:nth-child(2) {
+  margin-block-end: 25px;
+}
+
+.card__actions {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: end;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.sparks {
+  fill: transparent;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--text-color);
+  outline: none;
+}
+
+.card__like-button {
+  border: 2px solid var(--border-color);
+  padding: 9px 17px;
+  background-color: var(--main-bg-color);
+  justify-content: center;
+  align-items: center;
+  block-size: 38px;
+  inline-size: 130px;
+  position: relative;
+}
+
+.card__like-button:focus-visible {
+  outline: none;
+}
+
+.card__like-button:focus {
+  outline: none;
+}
+
+.card__like-button:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color: var(--text-color);
+  transition: width 0.3s ease;
+  inline-size: 100%;
+  block-size: 100%;
+  width: 0;
+}
+
+.card__like-button:hover {
+  cursor: pointer;
+}
+
+.button__text {
+  font-size: 14px;
+  font-family: var(--accent-font-family), sans-serif;
+  color: var(--shadow-color);
+  font-weight: var(--main-font-regular);
+  mix-blend-mode: difference;
+  line-height: 12.6px;
+}
