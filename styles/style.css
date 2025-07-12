@@ -369,22 +369,12 @@
   mix-blend-mode: difference;
 }
 
-.card__icon-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid transparent;
-  padding: 0;
-  background-color: var(--main-bg-color);
-  transition: border-color 0.3s ease;
-}
-
 .dialog__modal-text {
   line-height: 150%;
 }
 .dialog__modal-img {
-  block-size: 78px;
   z-index: 2;
+  block-size: 78px;
 }
 
 @media (width <= 375px) {
