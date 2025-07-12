@@ -150,7 +150,7 @@
 }
 
 .filter__contrast {
-  filter: contrast(200%);
+  filter: hue-rotate(100deg) opacity(70%);
 }
 
 .card__tag {
@@ -379,7 +379,15 @@
   transition: border-color 0.3s ease;
 }
 
-@media screen and (width <= 375px) {
+.dialog__modal-text {
+  line-height: 150%;
+}
+.dialog__modal-img {
+  block-size: 78px;
+  z-index: 2;
+}
+
+@media (width <= 375px) {
   .card__tag {
     top: 25px;
     right: 11px;
