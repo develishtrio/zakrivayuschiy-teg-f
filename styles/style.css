@@ -21,38 +21,13 @@
 .page {
   font-family: var(--main-font-family), sans-serif;
   background-color: var(--gradient-dark-color);
-  /* background-image: repeating-linear-gradient(
-      to bottom,
-      var(--main-bg-color) 0px 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      to right,
-      var(--gradient-third-color) 0px 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(
-      180deg,
-      var(--gradient-light-color) 0%,
-      var(--gradient-dark-color) 100%
-    ); */
   background-image: repeating-linear-gradient(
-      0deg,
-      var(--gradient-light-color),
-      var(--gradient-light-color) 2px,
-      transparent 2px,
-      transparent 4px,
-      transparent 4px
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
     ),
-    repeating-linear-gradient(
-      90deg,
-      var(--gradient-light-color),
-      var(--gradient-light-color) 2px,
-      transparent 2px,
-      transparent 4px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(to bottom, white, transparent);
+    repeating-linear-gradient(to bottom, var(--gradient-third-color) 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, var(--gradient-light-color) 0.01%, var(--gradient-dark-color) 100%);
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
