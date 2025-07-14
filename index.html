@@ -239,7 +239,7 @@
             Но это только начало. Во-первых, впереди ещё много материала 
             про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. 
             Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.</p>
-          <p class="card__text"></p>
+          <p class="card__text">Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.</p>
           <div class="card__actions">
             <button class="card__icon-button" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="transparent">
@@ -260,9 +260,9 @@
     </main> 
     <!--ТУТ КАРТОЧКИ ВСЕ, ДАЛЬШЕ ИХ НЕТ-->
       <div class="last__button">
-        <button class="button__save" type="button" onclick="window['dialog-id'].showModal()">
-          <svg class="button__save-picture" fill="currentColor" viewbox="0 0 29 28">
-            <use href="./svg/floppy.svg"></use>
+        <button class="button__save" type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
+          <svg class="button__save-img" viewBox="0 0 40 40" id="floppy" aria-hidden="true">
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="button__save-text">Сохранить на память</span>
         </button>
@@ -270,11 +270,11 @@
       <dialog class="dialog" id="dialog-id">
         <div class="dialog__modal">
           <svg class="dialog__modal-img" viewBox="0 0 40 40" id="floppy" aria-hidden="true">
-            <use href="./svg/floppy.svg"></use>
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="dialog__modal-text">Вставьте дискету, чтобы продолжить</span>
         </div>
-        <button class="button__ok" type="button">
+        <button class="button__ok" type="button" onclick="window['dialog-id'].close()">
           <span class="button__ok-text">ок</span>
         </button>
       </dialog>

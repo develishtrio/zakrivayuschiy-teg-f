@@ -96,7 +96,7 @@
 }
 
 .card {
-  margin-block-end: 50px;
+  margin-block-end: 45px;
   color: var(--text-color);
   background-color: var(--main-bg-color);
 }
@@ -278,20 +278,19 @@
 .button__save {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 8px;
   border: 2px solid var(--border-color);
-  padding: 15px 20px;
+  /* padding: 15px 20px; */
   overflow: hidden;
   font-weight: 400;
   font-size: 14px;
   line-height: 12.6px;
   background-color: var(--main-bg-color);
   cursor: pointer;
-  inline-size: 335px;
-  block-size: 55px;
+  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  block-size: 51px;
 }
 
 .button__save:focus-visible,
@@ -372,9 +371,16 @@
 .dialog__modal-text {
   line-height: 150%;
 }
+.button__save svg {
+  color: var(--shadow-color);
+  block-size: 21px;
+  inline-size: 21px;
+  mix-blend-mode: difference;
+}
+
 .dialog__modal-img {
-  z-index: 2;
-  block-size: 78px;
+  width: 80px;
+  height: 80px;
 }
 
 @media (width <= 375px) {
