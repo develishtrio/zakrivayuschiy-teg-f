@@ -343,6 +343,7 @@ dialog:open {
   display: grid;
   gap: 30px;
 }
+
 .dialog:not([open]) {
   display: none;
 }
