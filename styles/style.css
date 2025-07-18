@@ -331,9 +331,7 @@
   border: 2px solid var(--border-color);
   background-color: #fff;
 }
-* {
-  outline: 1px solid red;
-}
+
 .button__ok-text {
   color: var(--shadow-color);
   font-family: var(--accent-font-family), sans-serif;
@@ -358,7 +356,6 @@
   .button__save {
     flex-direction: column;
     height: 80px;
-    margin-bottom: 100px;
   }
 
   .button__save svg {
